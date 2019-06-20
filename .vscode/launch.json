@@ -1,0 +1,20 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "Debug Microcontroller",
+            "target": "./target/thumbv7em-none-eabihf/debug/test_embedded",
+            "gdbpath": "/opt/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-gdb",
+            "cwd": "${workspaceRoot}",
+            "autorun": [
+                "target remote :3333",
+                "load"
+            ]
+        }
+    ]
+}
