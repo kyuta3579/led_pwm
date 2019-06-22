@@ -19,7 +19,6 @@ use hal::prelude::*;
 use hal::gpio::{Input, PullDown, Output, PushPull, Alternate, AF2};
 use hal::gpio::gpioa;
 use hal::gpio::gpiod;
-//use hal::gpio::Speed;
 
 //use hal::delay::Delay;
 //use hal::hal::Pwm;
